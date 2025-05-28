@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feuerwehr Funkmelder PRO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>🚨 Feuerwehr Funkmelder PRO</h1>
+      <p>Simulation eines professionellen Feuerwehr-Funkmelders</p>
+    </header>
+    
+    <main>
+      <div id="alarmBox" class="alarm-box">⏳ Keine aktuellen Alarme</div>
+      <button onclick="startSimulation()" class="start-btn">Simulation starten</button>
+      
+      <h2>Einsatzverlauf</h2>
+      <ul id="logList" class="log-list"></ul>
+    </main>
+
+    <footer>
+      <small>© 2025 Alex Gaming Studios™ – Realistische Feuerwehr-Simulation</small>
+    </footer>
+  </div>
+
+  <audio id="alarmSound" src="sounds/alarm.ogg" preload="auto"></audio>
+  <script src="app.js"></script>
+</body>
+</html>
